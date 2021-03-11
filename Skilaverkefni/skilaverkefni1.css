@@ -1,0 +1,52 @@
+body{
+    background-image: url(gray.png);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid blue;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.loftun{
+    padding-left: 10px;
+
+}
+
+.spassia{
+    padding-left: 30px;
+}
+
+H1{
+    color: red;
+    text-align: center;
+}
+
+.uppercase{
+    text-transform:uppercase;
+}
+
+H2{
+    color: purple;
+
+}
+
+.rauttfat{
+    color:red;
+    font-weight: bold;
+}
+
+.skaletur{
+    font-style: italic;
+    color: blue;
+}
+
+strong{
+    color: red;
+}
+
+ul{
+    color: green;
+}
+
+em{
+    color: blue;
+}
