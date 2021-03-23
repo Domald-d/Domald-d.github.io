@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+.cool{
+    display: block;
+    border: 3px green solid;
+    margin: 35px;
+}
+
+.boxi{
+    border: 6px blue dashed;
+    padding: 25px;
+    margin: 35px;
+    color: blue;
+}
+
+.box2{
+    border: solid 6px red;
+    padding: 30px;
+    margin: 35px;
+}
+
+.rand{
+    border: solid 6px red;
+    padding: 25px;
+    margin: 35px;
+    color: red;
+}
+
+.ul li{
+    padding: 1em;
+    margin: 1em;
+    border: 3px dashed green;
+}
+
+.ul1 li{
+    display: inline;
+    padding: 1em;
+    margin: 1em;
+    border: 3px dashed blue;
+    color: red;
+}
+
+.ul2 li{
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+    border: 3px dashed red;
+}
+
+.kassi{
+    border: black solid 1px;
+    padding: 2em;
+    float: left;
+    width: 50%;
+}
+
+.kassi2{
+    border: black solid 1px;
+    padding: 1em;
+    float: left;
+}
+
+.float{
+    float: left;
+    width: 0.7em;
+    font-size: 400%;
+    font-family: algerian, courier;
+    line-height: 0.1%;
+}
+img{
+    float: right;
+}
+body {
+	max-width: 60em;
+	margin: 0 auto;
+	font-family: sans-serif;
+    background-image: url(Gray.jpg);
+}
+
+footer p {
+    text-align: center;
+}
+
+.gulur {
+	background-color: yellow; 
+}
+.raudur {
+	background-color: red; 
+}
+.graenn {
+	background-color: lime;
+}
+.blar {
+	background-color: cyan; 
+}
+.box {
+	font-size: 1.2em;
+	height: 5em;
+    padding: 5em;
+    text-align: center;
+}
+
+.flow{
+    display: flex;
+    flex-flow:row-reverse;
+}
+
+.chaos{
+    display: flex;
+    flex-flow:column-reverse;
+}
+
+.death{
+    background-color: yellow;
+    text-align: center;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: grid;
+    content: "";
+    clear: left;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
