@@ -1,0 +1,116 @@
+
+.item1 { grid-area: header; background-color: orange; color: silver;}
+.item2 { grid-area: main; color:black; background-color: lightcoral;}
+.item3 { grid-area: article; color:black; background-color: green;}
+.item4 { grid-area: aside; color:black; background-color: greenyellow;}
+.item5 { grid-area: nav; color:black; background-color: indigo;}
+.item6 { grid-area: footer; color:black; background-color:mediumvioletred;}
+.item7 { grid-area: aside2; color:black; background-color: salmon;}
+
+section{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+    @media only screen and (min-width: 0em){
+        body {
+            background-color: lightblue;
+        }
+
+        figure{
+            margin: 0em;
+            padding: 0em;
+        }
+
+
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            'header'
+            'main'
+            'article'
+            'aside'
+            'aside2'
+            'footer'
+            'nav';
+          grid-gap: 1px;
+          background-color: black;
+          padding: 1px;
+        }
+        
+        .grid-container > div,header,footer,nav,main,aside,article{
+          text-align: center;
+          padding: 20px 20px;
+          font-size: 30px;
+        }
+    }
+    
+    @media only screen and (min-width: 37.5em){
+        body {
+            background-color: green;
+        }
+
+        .gofigure{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 35%;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            'header header'
+            'main main'
+            'aside article'
+            'aside2 article'
+            'footer footer'
+            'nav nav';
+          grid-gap: 1px;
+          background-color: black;
+          padding: 1px;
+        }
+        
+        .grid-container > div,header,footer,nav,main,aside,article {
+            text-align: center;
+          font-size: 30px;
+          padding: 20px 20px;
+        }
+    }
+    
+    @media only screen and (min-width: 48em){
+      body {
+        background-color: red;
+      }
+
+      .gofigure{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        padding: 0;
+    }
+      .grid-container{
+        display: grid;
+        grid-template-areas: 
+            'nav nav nav nav'
+            'header header header header'
+            'aside main main aside2'
+            'aside main main aside2'
+            'aside article article aside2'
+            'aside article article aside2'
+            'footer footer footer  footer';
+            grid-gap: 1px;
+            background-color: black;
+            padding: 1px;
+        }
+    
+    .grid-container > div,header,footer,nav,main,aside,article {
+        text-align: center;
+      font-size: 30px;
+      padding: 20px 20px;
+    }}
