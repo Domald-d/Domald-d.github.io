@@ -1,0 +1,141 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+    background: linear-gradient(blue,navy);
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 37.5em) {
+    .innermenu a {
+      float: none;
+      width: 100%;
+    }
+    .column{
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+    }
+}
+
+
+.pila{
+    position: fixed;
+    bottom: 30px;
+    float: right;
+    right: 2%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 30px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: rgb(252, 246, 246);
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+
+.midjun{
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.dalkar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dalkar-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.verkefni{
+    color: orange;
+}
+.dalkar-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.midja{
+    background: linear-gradient(yellow,lightyellow);
+}
+
+.topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:transparent;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Add a black background color to the top navigation */
+.innermenu {
+    background-color:purple;
+    overflow: hidden;
+  }
+  .innermenu a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  /* Change the color of links on hover */
+  .innermenu a:hover {
+    background-color: transparent;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .innermenu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+ul li a:link{
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    ul li a:visited {
+        color:orange;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    ul li a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+}
