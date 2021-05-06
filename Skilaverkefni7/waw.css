@@ -1,0 +1,217 @@
+/* Grid area fyrir grid dalka setjum background radial-gradient líka á grid areas*/
+.item1 {grid-area: header; background-image: radial-gradient( red, black);}
+.item2 {grid-area: main; background-image: radial-gradient( red, black);}
+.item3 {grid-area: article; background-image: radial-gradient( red, black);}
+.item4 {grid-area: aside; background-image: radial-gradient( red, black);}
+.item5 {grid-area: footer; background-image: radial-gradient( red, black);}
+
+/* setjum max-width 100% margin 0 og padding 0 á section*/
+section{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* setjum smooth scroll þegar við scrollum upp og niður síðu*/
+html{
+    scroll-behavior: smooth;
+}
+
+/* font-face importum font sem er í ttf skrá eða true type file*/
+@font-face{
+    font-family: "avqest";
+    src: url("font/avqest.ttf") format("truetype");
+}
+
+/* setjum importaða fontið inn í body og margin 0 svo síða sé ekki með hvítan border*/
+body{
+    font-family: "avqest";
+    margin: 0 auto;
+}
+/* myndir eru með max-width 100% og hæð er auto*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* Responsive design fyrir Síma*/
+@media screen and (min-width: 0em) {
+    .innermenu a { /* innemenu verður block þegar skjár fer í x stærð*/
+      display: block;
+      width: 100%;
+    }
+
+    figure{ /* setjum 0 em margin og padding á figure svæði*/
+        margin: 0em;
+        padding: 0em;
+    }
+    /* búum til grid containers eða kassa fyrir header og svo framvegis*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'article'
+    'aside'
+    'footer';
+  grid-gap: 1px;
+  background-color: black;
+  padding: 1px;
+}
+/* setjum texta í center og gefum lit og padding*/
+.grid-container > div,header,footer,nav,main,aside,article{
+  text-align: center;
+  color: goldenrod;
+  padding: 20px 20px;
+  font-size: 30px;
+}}
+/* responsive design fyrir tablets*/
+@media screen and (min-width: 37.5em) {
+    .innermenu a { /* setjum innermenu í linu ekki niður í block*/
+        width: 100%;
+        display: inline;
+    }
+.grid-container{ /* búum til grid containera fyrir tablet stærð*/
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'aside article'
+    'aside article'
+    'footer footer';
+  grid-gap: 1px;
+  background-color: black;
+  padding: 1px;
+}
+/* klasi fyrir grid fáum myndir í dálka eða greinar skiptir ekki máli*/
+.gofigure{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* sama og fyrir ofan búum til klasa fyrir dalka*/
+.dalkar1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align:center;
+    padding: 30px 30px;
+}
+/* dalkar klasi*/
+.dalkar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align:center;
+    padding: 30px 30px;
+}
+/* setjum grid container texta í center og lit og meira*/
+.grid-container > div,header,footer,nav,main,aside,article{
+  text-align: center;
+  color: goldenrod;
+  padding: 20px 20px;
+  font-size: 30px;
+}}
+/* responsive design fyrir skjái sem eru fyrir ofan 48 em tölvur eða laptop etc*/
+@media screen and (min-width: 48em) {
+.grid-container{ /* búum til grid containera*/
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main main main main'
+    'article article article article'
+    'aside aside aside aside'
+    'footer footer footer footer';
+  grid-gap: 1px;
+  background-color: black;
+  padding: 1px;
+}
+/* klasi eins og fyrir ofan nema myndir raðast í röð ekki tvær og tvær*/
+.gofigure{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 0;
+}
+/* sama og fyrir ofan dalkar sem raðast eftir skjá stærð*/
+.dalkar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align:center;
+    padding: 30px 30px;
+}
+/* dalkar*/
+.dalkar1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align:center;
+    padding: 30px 30px;
+}
+/* setjum texta í center og setjum lit*/
+.grid-container > div,header,footer,nav,main,aside,article{
+  text-align: center;
+  color: goldenrod;
+  padding: 20px 20px;
+  font-size: 30px;
+}}
+
+/* setjum transperant lit á inner menu nav og felum allt overflow */
+.innermenu {
+    background-color: transparent;
+    overflow: hidden;
+  }
+  /* setjum liti og centerum texta og tökum decoration í burtu*/
+  .innermenu a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  /* breytum lit þegar við hoverum yfir link */
+  .innermenu a:hover {
+    background-color: transparent;
+    color: goldenrod;
+  }
+  
+  /* breytum lit a active link*/
+  .innermenu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+/* búum til pilu klass eða ör til að fara aftur upp efst á síðu*/
+  .pila{
+    position:fixed;
+    bottom: 30px;
+    float: right;
+    right: 2%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 30px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+}
+/* unorder list linkar breytum lit og hvernig þeir haga sér eftir hvað við gerum*/
+ul li a:link{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+ul li a:visited {
+    color:orange;
+    background-color: transparent;
+    text-decoration: none;
+}
+ul li a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+ul li a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
